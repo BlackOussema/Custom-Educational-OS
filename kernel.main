@@ -1,0 +1,18 @@
+┌──(kali㉿kali)-[~/OSGHA]
+└─$ make       
+[+] Cleaning old files...
+rm -f *.o CyberShield.bin
+[+] Compiling Assembly...
+as --32 boot.S -o boot.o
+[+] Compiling Kernel...
+gcc -m32 -ffreestanding -O2 -fno-stack-protector -fno-pie -nostdlib -c kernel.c -o kernel.o
+kernel.c:193:6: error: redefinition of ‘handle_shell’
+  193 | void handle_shell(char* cmd) {
+      |      ^~~~~~~~~~~~
+kernel.c:129:6: note: previous definition of ‘handle_shell’ with type ‘void(char *)’
+  129 | void handle_shell(char* cmd) {
+      |      ^~~~~~~~~~~~
+make: *** [Makefile:23: build] Error 1
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~/OSGHA]
+└─$ 
