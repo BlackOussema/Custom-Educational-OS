@@ -26,18 +26,9 @@ Or watch the full demo video here: [▶️ Watch Video] (https://youtu.be/1uWnT0
 
 1. Clone the repository:
    ```bash
-   (https://github.com/BlackOussema/Custom-Educational-OS.git)
-
-   Future Improvements
-
-Add interrupt and timer support
-
-Implement a simple RAM-based filesystem
-
-Enhance security with hashed keys
-
-Add more CLI commands
-
+   git clone https://github.com/BlackOussema/Custom-Educational-OS.git
+   Build the system with makefile:
+   make
 About Me:
 Name:Ghariani Oussema 18 years old I have CEH 
 Passion: OS development, low-level programming,system security, and PenTests
