@@ -8,8 +8,8 @@
 .long CHECKSUM
 
 .section .text
-.global start        # تم التغيير هنا
-start:               # تم التغيير هنا
+.global start        
+start:               
     mov $stack_top, %esp
     call kernel_main
     cli
